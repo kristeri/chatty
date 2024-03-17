@@ -1,5 +1,5 @@
-# chatty
-Chatty is a proof of concept AI conversation application using Meta's LLaMA model on the backend with a client interface inspired by OpenAI's ChatGPT. The app uses Vue.js on the frontend and python on the backend with a Flask API. The LLM used is LLaMA 2.
+# Chatty
+Chatty is a proof of concept AI conversation application using Meta's LLaMA model on the backend with a client interface inspired by OpenAI's ChatGPT. The app uses Vue.js on the frontend and python on the backend with a Flask API. The LLM used is Meta's open source LLaMA 2.
 
 # Installation
 
