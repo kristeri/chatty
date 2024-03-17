@@ -34,11 +34,11 @@ class LLM(BaseCallbackHandler):
                    n_threads = 1,
                    top_k = 10000,
                    temperature = 0.7,
-                   max_tokens = 2000,
+                   max_tokens = 4096,
                    callback_manager = CallbackManager([LLMout]), verbose = False)
     print("Setup took %d seconds" % round(time.time() - start, 2))
     
-    template = """Answer following text: '{text}' informatively"""
+    template = """'{text}'"""
     prompt = PromptTemplate(template = template, input_variables = ["text"])
     chain = LLMChain(llm = llm, prompt = prompt, verbose = False)
     
