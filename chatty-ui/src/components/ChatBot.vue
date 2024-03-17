@@ -18,9 +18,11 @@ async function askQuery(this: any, event: any) {
     const textArea = <HTMLInputElement>document.getElementById("prompt-textarea");
     const query = textArea.value;
     textArea.value = "";
+    textArea.disabled = true;
     messages.value.push({ author: "You", text: query });
     showLoading.value = true;
     axios.post(`${apiUrl}/conversation`, { text: query }).then(response => {
+      textArea.disabled = false;
       messages.value.push({ author: "Chatty", text: response.data });
       showLoading.value = false;
     })
