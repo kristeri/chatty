@@ -13,9 +13,9 @@ Install python and C++ development tools provided by Microsoft visual studio.
 
 https://visualstudio.microsoft.com/free-developer-offers/
 
-Select Python development -> check Python native development tools.
+**Select Python development -> check Python native development tools on the right**.
 
-Select Desktop development with C++.
+**Select Desktop development with C++**.
 
 Install Nvidia CUDA to run the model on GPU.
 
