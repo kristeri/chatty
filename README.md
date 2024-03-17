@@ -5,9 +5,9 @@ Chatty is a proof of concept AI conversation application using Meta's LLaMA mode
 
 # Backend
 
-Download the llama-2-7b-chat.ggmlv3.q4_0.bin model and place it under chatty-api folder. Notice that this model is quite large (3.79 GB).
+Download the llama-2-7b-chat.ggmlv3.q4_0.bin model and place it under chatty-api folder. Notice that this model is quite large (7.16 GB).
 
-https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/blob/main/llama-2-7b-chat.ggmlv3.q4_0.bin
+https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/blob/main/llama-2-7b-chat.ggmlv3.q8_0.bin
 
 Install python and C++ development tools provided by Microsoft visual studio.
 

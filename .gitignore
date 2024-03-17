@@ -1,2 +1,3 @@
 chatty-api/__pycache__
 chatty-api/llama-2-7b-chat.ggmlv3.q4_0.bin
+chatty-api/llama-2-7b-chat.ggmlv3.q8_0.bin

@@ -27,7 +27,7 @@ class LLM(BaseCallbackHandler):
     embedding = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2", model_kwargs={"device": self.device})
     
     print("Loading LlamaCpp")
-    llm = LlamaCpp(model_path = "llama-2-7b-chat.ggmlv3.q4_0.bin", 
+    llm = LlamaCpp(model_path = "llama-2-7b-chat.ggmlv3.q8_0.bin", 
                    n_ctx = 2048,
                    n_gpu_layers = 100,
                    n_batch = 512,
