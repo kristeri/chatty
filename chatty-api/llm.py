@@ -38,7 +38,7 @@ class LLM(BaseCallbackHandler):
                    callback_manager = CallbackManager([LLMout]), verbose = False)
     print("Setup took %d seconds" % round(time.time() - start, 2))
     
-    template = """'{text}'"""
+    template = """'Answer {text}'"""
     prompt = PromptTemplate(template = template, input_variables = ["text"])
     chain = LLMChain(llm = llm, prompt = prompt, verbose = False)
     
